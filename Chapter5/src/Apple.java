@@ -1,6 +1,6 @@
 public class Apple {
     double mass;
-    double diameter = 1;
+    private double diameter = 1;
     int x, y;
     static double gravAccel = 9.8;
     static final double EARTH_ACCEL = 9.8;
@@ -26,5 +26,13 @@ public class Apple {
             this.y = (int)diameter/2;
         else
             this.y = y;
+    }
+
+    public void setDiameter(double diameter) {
+        this.diameter = diameter;
+    }
+
+    public double getDiameter() {
+        return diameter;
     }
 }
