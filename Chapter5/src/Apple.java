@@ -18,4 +18,13 @@ public class Apple {
         System.out.println(" diameter: " + diameter);
         System.out.println(" position: (" + x + ", " + y + ")");
     }
+
+    public void moveTo(int x, int y) {
+        System.out.printf("Moving apple to %d, %d", x, y);
+        this.x = x;
+        if (y < diameter / 2)
+            this.y = (int)diameter/2;
+        else
+            this.y = y;
+    }
 }
